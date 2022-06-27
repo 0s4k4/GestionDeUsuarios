@@ -1,3 +1,9 @@
+<?php
+    $usuarios = ctrUsuarios::ctrMostrarUsuarios();
+
+    
+?>
+
 <!DOCTYPE html>
 <html>
 

@@ -1,3 +1,7 @@
+<?php
+
+    
+?>
 <div class="content-wrapper" style="win-height: 717px">
     <section class="content-header">
         <div class="container-fluid">
@@ -26,12 +30,37 @@
                                 <th style="width:10px">#</th>
                                 <th>Nombre</th>
                                 <th>usuario</th>
-                                <th>foto</th>
                                 <th>rol</th>
+                                <th>foto</th>
                                 <th>Acciones</th>
                             </tr>
                           </thead>
                           <tbody>
+                            <?php ?>
+                            <?php 
+                                foreach($usuarios  as $key => $value){
+                                
+                                
+                            ?>
+                            <tr>
+                                <td><?php echo $value["id"] ?></td>
+                                <td><?php echo $value["nombre"] ?></td>
+                                <td><?php echo $value["usuario"] ?></td>
+                                <td><?php echo $value["rol"] ?></td>
+                                <td><?php echo $value["foto"] ?></td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button class="btn btn-warning btn-sm">
+                                            <i class="fas fa-pencil-alt text-white">Editar</i>
+                                        </button>
+
+                                        <button class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash-alt">Eliminar</i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <?php }?>
 
                           </tbody>
 
